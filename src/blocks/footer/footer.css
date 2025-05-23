@@ -1,0 +1,18 @@
+.footer{
+    box-sizing: border-box;
+    padding: 16px;
+    border-top: 2px solid rgba(0, 0, 0, .14);
+    
+}
+.footer__title {
+    font-size: 14px;
+    font-weight: 600; /*bold  сверить*/
+    margin: 0;
+}
+
+.footer__desc {
+    max-width: 960px;
+    margin: 0;
+    font-size: 12px;
+    font-weight: 500; /*medium  сверить*/
+}

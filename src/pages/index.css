@@ -1,0 +1,11 @@
+@import url(../vendor/normalize.css);
+@import url(../blocks/root/root.css);
+@import url(../vendor/fonts/fonts.css);
+
+
+@import url(../blocks/aside/aside.css);
+
+@import url(../blocks/card/card.css);
+@import url(../blocks/menu/menu.css);
+
+@import url(../blocks/footer/footer.css);
