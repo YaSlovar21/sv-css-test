@@ -9,14 +9,20 @@
     
     padding: 15px;
     box-sizing: border-box;
+    min-height: 100vh;
+    padding: 15px;
+    display: flex
 }
 
 .page__content {
-    background-color: #EFE5FF;
-    height: 100%;
+    background-color: #efe5ff;
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+
 }
 
-@media screen and (max-width: 1025px) {
+@media screen and (max-width: 641px) {
     .page__content {
         background-color: #D4F0FF;
     }
@@ -29,6 +35,7 @@
 }   
 
 
-html, body, main {
-    height: 100%;
+html {
+   /*min-height: 100vh;
+    height: 100%;*/
 }

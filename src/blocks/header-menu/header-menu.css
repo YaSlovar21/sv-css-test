@@ -1,0 +1,19 @@
+.header-menu {
+    display: flex;
+    padding:  20px;
+    justify-content: flex-end;
+}
+
+.header-menu__item {
+    margin-right: 18px;
+}
+
+.header-menu__item:last-child {
+    margin-right: 0;
+}
+
+@media screen and (max-width:641px) {
+    .header-menu {
+        background-color: #95D9FF;
+    }
+}

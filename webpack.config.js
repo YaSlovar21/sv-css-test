@@ -2,6 +2,9 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin'); 
+const { cards } = require('./src/utils/constants');
+
+
 
 module.exports = {
   entry: { 
@@ -43,6 +46,9 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
+      templateParameters: {
+        cards
+      },
       template: './src/index.html',
       chunks: ["main"]
     }),

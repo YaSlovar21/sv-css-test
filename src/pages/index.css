@@ -3,9 +3,13 @@
 @import url(../vendor/fonts/fonts.css);
 
 
-@import url(../blocks/aside/aside.css);
+@import url(../blocks/layout/layout.css);
 
+@import url(../blocks/cards/cards.css);
 @import url(../blocks/card/card.css);
+
 @import url(../blocks/menu/menu.css);
+@import url(../blocks/header-menu/header-menu.css);
+@import url(../blocks/icon-button/icon-button.css);
 
 @import url(../blocks/footer/footer.css);

@@ -8,9 +8,10 @@
 <body class="page">
     <div class="page__content">
       <main class="layout">
-        <aside class="aside">
+        <aside class="layout__aside">
           <nav class="menu">
-            <ul class="">
+            
+            <ul class="menu__list">
               <li class="menu__item menu__item_active">
                 <figure class="menu__avatar"></figure>
                 <span class="menu__text">Первый пункт</span>
@@ -25,8 +26,39 @@
               </li>
           </nav>
         </aside>
-        <div class="cards">
+        <div style="margin: 0 auto;">
+          <div class="header-menu">
+            <label style="z-index: 20; position: relative; margin-right: auto;">
+              <input class="menu__checkbox" type="checkbox">
+              <figure class="menu__toogle">
 
+              </figure>
+              </label>
+            <button class="icon-button">
+              <svg class="icon-button__svg" width="20" height="25" viewBox="0 0 20 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M18.3637 10.8149C19.5941 11.6014 19.5941 13.3986 18.3637 14.1852L3.07716 23.9564C1.74589 24.8074 -6.90641e-08 23.8513 0 22.2713L8.54234e-07 2.7287C9.23298e-07 1.1487 1.74589 0.192599 3.07716 1.04356L18.3637 10.8149Z" fill="black"/>
+              </svg>
+            </button>
+            <button class="icon-button">
+              <svg  class="icon-button__svg" width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="11.5" cy="11.5" r="11.5" fill="black"/>
+              </svg>
+            </button>
+            <button class="icon-button">
+              <svg class="icon-button__svg" width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect  width="21" height="21" rx="4" fill="black"/>
+              </svg>
+            </button>
+          </div>
+          <div class="cards">
+              <% cards.map((c)=> { %>
+                <div class="card">
+                  <p class="card__text">
+                    <%= c.text %>
+                  </p>
+                </div> 
+              <% }) %>
+          </div>
         </div>
       </main>
       <footer class="footer">

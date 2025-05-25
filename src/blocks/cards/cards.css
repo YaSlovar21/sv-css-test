@@ -8,3 +8,21 @@
     gap: 20px;
     
 }
+
+@media screen and (max-width: 1025px) {
+    .cards {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media screen and (max-width:641px) {
+     .cards {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (max-width:321px) {
+     .cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
