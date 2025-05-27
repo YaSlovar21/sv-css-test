@@ -8,11 +8,12 @@ const { cards } = require('./src/utils/constants');
 
 module.exports = {
   entry: { 
-    main: './src/pages/index.js' 
+    main: './src/pages/index.js',
+    menu: './src/components/menu.js'
   },
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: 'main.js',
+    filename: "js/[name].js",
     publicPath: ''
   },
   mode: 'development',
@@ -50,7 +51,7 @@ module.exports = {
         cards
       },
       template: './src/index.html',
-      chunks: ["main"]
+      chunks: ["main", "menu"]
     }),
     new CleanWebpackPlugin(),
     new MiniCssExtractPlugin()

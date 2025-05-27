@@ -12,6 +12,18 @@
     margin-right: 0;
 }
 
+.header-menu__openbutton {
+    display: none;
+    /*position: relative; */
+    margin-right: auto;
+}
+
+@media screen and (max-width:641px) {
+    .header-menu__openbutton {
+        display: flex;
+    }
+}
+
 @media screen and (max-width:641px) {
     .header-menu {
         background-color: #95D9FF;
